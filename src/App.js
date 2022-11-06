@@ -16,8 +16,9 @@ import MedicalRecord from "./scenes/MedicaRecords";
 import PatientHistory from "./scenes/PatientHistory";
 import TDMsection from "./scenes/TDM";
  import AvalaibleTime from "./scenes/AvalaibleTIme";
-
-
+import Doctor from "./scenes/Doctor";
+import Payment from "./scenes/Payment";
+import Symptoms from "./scenes/symptopms";
 function App() {
   const [theme, colorMode] = useMode();
   return (
@@ -41,7 +42,10 @@ function App() {
               <Route path="/medical_records" element={<MedicalRecord />} />
               <Route path="/patientHistory" element={<PatientHistory />} />
               <Route path="/tdm" element={<TDMsection />} />
-              <Route path="/avalaibletime" element={<AvalaibleTime/>} />
+              <Route path="/avalaibletime" element={<AvalaibleTime />} />
+              <Route path="/doctor" element={<Doctor />} />
+              <Route path="/payment" element={<Payment />} />
+              <Route path="/symptoms" element={<Symptoms/>} />
             </Routes>
           </main>
         </div>
