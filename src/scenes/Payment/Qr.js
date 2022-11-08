@@ -12,9 +12,9 @@ const Qrcode = () => {
   return (
     <Box
       width="35vw"
-       height="50vh"
+      height="50vh"
       sx={{
-        border: "2px solid black",
+        border: "2px solid #d5d5d5",
         borderRadius: "5px",
       }}
     >
@@ -24,7 +24,12 @@ const Qrcode = () => {
         justifyContent="space-evenly"
         sx={{ margin: "20px 20px 20px 20px", height: "45vh" }}
       >
-        <Box sx={{ height: "30vh" }} display="flex" justifyContent="center" alignItems="center">
+        <Box
+          sx={{ height: "30vh" }}
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+        >
           <img src={Qrcodeimng} alt="img" width={200} height={200} />
         </Box>
         <Box>

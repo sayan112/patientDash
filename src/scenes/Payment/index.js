@@ -12,11 +12,11 @@ import { Box, Button, Typography, useTheme } from "@mui/material";
                import  money from "./Images/Money.png";
               
 import { tokens } from '../../theme';
-
 import Card from './card';
 
 import { useState } from 'react';
 import Qrcode from './Qr';
+import Cash from './Cash';
 
 const Payment = () => {
   const [active, setActive] = useState("two");
@@ -139,6 +139,9 @@ const Payment = () => {
                     backgroundColor: "#DADADA",
                   },
                 }}
+                onClick={() => {
+                  setActive("three");
+                }}
               >
                 <Box>
                   <Typography
@@ -162,14 +165,10 @@ const Payment = () => {
                 </Box>
               </Box>
             </Box>
-            
-              {active === "one" && 
-           <Card/>
-              }
-              {active === "two" && 
-               <Qrcode/>
-              }
-           
+
+            {active === "one" && <Card />}
+            {active === "two" && <Qrcode />}
+            {active === "three" && <Cash />}
           </Box>
         </Box>
       </Box>

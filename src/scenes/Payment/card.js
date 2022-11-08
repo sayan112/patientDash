@@ -53,7 +53,7 @@ const Card = () => {
       flexDirection="column"
       justifyContent="space-evenly"
       sx={{
-        border: "2px solid black",
+        border: "2px solid #d5d5d5",
         borderRadius: "5px",
       }}
     >
